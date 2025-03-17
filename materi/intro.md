@@ -1,0 +1,2 @@
+# Welcome to Komputasi Aljabar Linear
+Sistem persamaan linear adalah kumpulan dua atau lebih persamaan linear yang memiliki variabel yang sama dalam setiap persamaan. Sistem persamaan linear merupakan materi dalam aljabar linear dan sering digunakan dalam berbagai bidang ilmu. 

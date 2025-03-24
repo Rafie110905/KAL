@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -60,6 +60,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'Sistem Aljabar Linear';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="&lt;no title&gt;" href="invers%20matriks.html" />
     <link rel="prev" title="Welcome to Komputasi Aljabar Linear" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -386,7 +387,10 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Contoh:</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c-metode-matriks-metode-gauss-jordan">c. Metode Matriks (Metode Gauss-Jordan)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c-metode-matriks-metode-gauss-jordan">c. Metode Matriks (Metode Gauss-Jordan)</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Contoh:</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jenis-solusi">4. Jenis Solusi</a></li>
@@ -506,6 +510,21 @@ x - y = 2
 </pre></div>
 </div>
 <p>Gunakan operasi baris untuk mendapatkan bentuk matriks eselon tereduksi.</p>
+<section id="id2">
+<h4>Contoh:<a class="headerlink" href="#id2" title="Link to this heading">#</a></h4>
+<p>Dari sistem</p>
+<div class="highlight-math notranslate"><div class="highlight"><pre><span></span>\begin{cases} 
+2x + y = 5 \\ 
+x - y = 1 
+\end{cases}
+</pre></div>
+</div>
+<p>Dapat ditulis sebagai:</p>
+<div class="highlight-math notranslate"><div class="highlight"><pre><span></span>\begin{bmatrix} 2 &amp; 1 &amp; | 5 \\ 1 &amp; -1 &amp; | 1 \end{bmatrix}
+</pre></div>
+</div>
+<p>Gunakan operasi baris hingga diperoleh solusi <code class="docutils literal notranslate"><span class="pre">x</span></code> dan <code class="docutils literal notranslate"><span class="pre">y</span></code>.</p>
+</section>
 </section>
 </section>
 <section id="jenis-solusi">
@@ -518,7 +537,7 @@ x - y = 2
 </section>
 <section id="contoh-soal-dan-latihan">
 <h2>5. Contoh Soal dan Latihan<a class="headerlink" href="#contoh-soal-dan-latihan" title="Link to this heading">#</a></h2>
-<p><strong>Soal:</strong>
+<p><strong>Soal 1:</strong>
 Selesaikan sistem persamaan berikut dengan metode eliminasi:</p>
 <div class="highlight-math notranslate"><div class="highlight"><pre><span></span>\begin{cases} 
 4x + 3y = 20 \\ 
@@ -548,6 +567,39 @@ Selesaikan sistem persamaan berikut dengan metode eliminasi:</p>
 </li>
 <li><p><strong>Solusi</strong>: <code class="docutils literal notranslate"><span class="pre">(3.2,</span> <span class="pre">2.4)</span></code></p></li>
 </ol>
+<p><strong>Soal 2:</strong>
+Selesaikan sistem berikut dengan metode substitusi:</p>
+<div class="highlight-math notranslate"><div class="highlight"><pre><span></span>\begin{cases} 
+5x + 2y = 14 \\ 
+3x - y = 1 
+\end{cases}
+</pre></div>
+</div>
+<p><strong>Jawaban:</strong></p>
+<ol class="arabic">
+<li><p>Nyatakan <code class="docutils literal notranslate"><span class="pre">y</span></code> dari persamaan kedua:</p>
+<div class="highlight-math notranslate"><div class="highlight"><pre><span></span>y = 3x - 1
+</pre></div>
+</div>
+</li>
+<li><p>Substitusi ke persamaan pertama:</p>
+<div class="highlight-math notranslate"><div class="highlight"><pre><span></span>5x + 2(3x - 1) = 14
+</pre></div>
+</div>
+<div class="highlight-math notranslate"><div class="highlight"><pre><span></span>5x + 6x - 2 = 14
+</pre></div>
+</div>
+<div class="highlight-math notranslate"><div class="highlight"><pre><span></span>11x = 16 \Rightarrow x = \frac{16}{11}
+</pre></div>
+</div>
+</li>
+<li><p>Substitusi <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">\frac{16}{11}</span></code> ke <code class="docutils literal notranslate"><span class="pre">y</span> <span class="pre">=</span> <span class="pre">3x</span> <span class="pre">-</span> <span class="pre">1</span></code>:</p>
+<div class="highlight-math notranslate"><div class="highlight"><pre><span></span>y = 3 \times \frac{16}{11} - 1 = \frac{48}{11} - \frac{11}{11} = \frac{37}{11}
+</pre></div>
+</div>
+</li>
+<li><p><strong>Solusi</strong>: <code class="docutils literal notranslate"><span class="pre">(\frac{16}{11},</span> <span class="pre">\frac{37}{11})</span></code></p></li>
+</ol>
 </section>
 <section id="kesimpulan">
 <h2>6. Kesimpulan<a class="headerlink" href="#kesimpulan" title="Link to this heading">#</a></h2>
@@ -556,7 +608,7 @@ Selesaikan sistem persamaan berikut dengan metode eliminasi:</p>
 <li><p>Dapat diselesaikan dengan metode <strong>Substitusi, Eliminasi, atau Matriks</strong>.</p></li>
 <li><p>Solusinya bisa berupa <strong>satu solusi, banyak solusi, atau tidak ada solusi</strong>.</p></li>
 </ul>
-<iframe src="https://www.geogebra.org/3d/jn4j8aex?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe></section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -598,6 +650,15 @@ Selesaikan sistem persamaan berikut dengan metode eliminasi:</p>
         <p class="prev-next-title">Welcome to Komputasi Aljabar Linear</p>
       </div>
     </a>
+    <a class="right-next"
+       href="invers%20matriks.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">&lt;no title&gt;</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -625,7 +686,10 @@ Selesaikan sistem persamaan berikut dengan metode eliminasi:</p>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Contoh:</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c-metode-matriks-metode-gauss-jordan">c. Metode Matriks (Metode Gauss-Jordan)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c-metode-matriks-metode-gauss-jordan">c. Metode Matriks (Metode Gauss-Jordan)</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Contoh:</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jenis-solusi">4. Jenis Solusi</a></li>

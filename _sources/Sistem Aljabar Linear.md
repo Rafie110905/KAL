@@ -1,8 +1,3 @@
----
-title: Untitled
-
----
-
 # Sistem Persamaan Linear
 
 ## 1. Pengertian
@@ -85,13 +80,27 @@ Persamaan dapat ditulis dalam bentuk matriks:
 ```
 Gunakan operasi baris untuk mendapatkan bentuk matriks eselon tereduksi.
 
+#### Contoh:
+Dari sistem
+```math
+\begin{cases} 
+2x + y = 5 \\ 
+x - y = 1 
+\end{cases}
+```
+Dapat ditulis sebagai:
+```math
+\begin{bmatrix} 2 & 1 & | 5 \\ 1 & -1 & | 1 \end{bmatrix}
+```
+Gunakan operasi baris hingga diperoleh solusi `x` dan `y`.
+
 ## 4. Jenis Solusi
 1. **Satu solusi unik** → Jika persamaan memiliki satu titik potong.
 2. **Tak terhingga banyak solusi** → Jika dua persamaan identik atau sejajar.
 3. **Tidak ada solusi** → Jika persamaan tidak memiliki titik potong (garis sejajar).
 
 ## 5. Contoh Soal dan Latihan
-**Soal:**
+**Soal 1:**
 Selesaikan sistem persamaan berikut dengan metode eliminasi:
 ```math
 \begin{cases} 
@@ -118,10 +127,37 @@ Selesaikan sistem persamaan berikut dengan metode eliminasi:
    ```
 4. **Solusi**: `(3.2, 2.4)`
 
+**Soal 2:**
+Selesaikan sistem berikut dengan metode substitusi:
+```math
+\begin{cases} 
+5x + 2y = 14 \\ 
+3x - y = 1 
+\end{cases}
+```
+
+**Jawaban:**
+1. Nyatakan `y` dari persamaan kedua:
+   ```math
+   y = 3x - 1
+   ```
+2. Substitusi ke persamaan pertama:
+   ```math
+   5x + 2(3x - 1) = 14
+   ```
+   ```math
+   5x + 6x - 2 = 14
+   ```
+   ```math
+   11x = 16 \Rightarrow x = \frac{16}{11}
+   ```
+3. Substitusi `x = \frac{16}{11}` ke `y = 3x - 1`:
+   ```math
+   y = 3 \times \frac{16}{11} - 1 = \frac{48}{11} - \frac{11}{11} = \frac{37}{11}
+   ```
+4. **Solusi**: `(\frac{16}{11}, \frac{37}{11})`
+
 ## 6. Kesimpulan
 - Sistem Persamaan Linear terdiri dari dua atau lebih persamaan linear.
 - Dapat diselesaikan dengan metode **Substitusi, Eliminasi, atau Matriks**.
 - Solusinya bisa berupa **satu solusi, banyak solusi, atau tidak ada solusi**.
-
-
-<iframe src="https://www.geogebra.org/3d/jn4j8aex?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>

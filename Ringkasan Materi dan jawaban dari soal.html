@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Welcome to Komputasi Aljabar Linear &#8212; My sample book</title>
+    <title>Ringkasan Materi Halaman 225–238: Transformasi Linear &amp; Matriks &#8212; My sample book</title>
   
   
   
@@ -59,10 +59,10 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Ringkasan Materi dan jawaban dari soal';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Sistem Persamaan Linear" href="Sistem%20Aljabar%20Linear.html" />
+    <link rel="prev" title="Invers Matriks: Pengertian, Rumus, dan Contoh" href="Pengertian%20dan%20Penjelasan%20Invers%20Matriks.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -125,8 +125,6 @@
       
       
       
-        
-      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -145,7 +143,7 @@
     
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="intro.html">
   
   
   
@@ -176,16 +174,16 @@
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
                     Welcome to Komputasi Aljabar Linear
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Sistem%20Aljabar%20Linear.html">Sistem Persamaan Linear</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Pengertian%20dan%20Penjelasan%20Invers%20Matriks.html">Invers Matriks: Pengertian, Rumus, dan Contoh</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Ringkasan%20Materi%20dan%20jawaban%20dari%20soal.html">Ringkasan Materi Halaman 225–238: Transformasi Linear &amp; Matriks</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Ringkasan Materi Halaman 225–238: Transformasi Linear &amp; Matriks</a></li>
 </ul>
 
     </div>
@@ -257,7 +255,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FRingkasan Materi dan jawaban dari soal.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -287,7 +285,7 @@
       
       
       
-      <li><a href="_sources/intro.md" target="_blank"
+      <li><a href="_sources/Ringkasan Materi dan jawaban dari soal.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -358,7 +356,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -369,11 +369,31 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Welcome to Komputasi Aljabar Linear</h1>
+    <h1>Ringkasan Materi Halaman 225–238: Transformasi Linear & Matriks</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transformasi-linear">1. Transformasi Linear</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#representasi-matriks-dari-transformasi">2. Representasi Matriks dari Transformasi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretasi-geometris">3. Interpretasi Geometris</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-penghitungan">4. Contoh Penghitungan</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#komposisi-transformasi">5. Komposisi Transformasi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#invers-transformasi">6. Invers Transformasi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualisasi-gambar-ke-matriks">7. Visualisasi Gambar ke Matriks</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nomor-1"><em>Nomor 1</em></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nomor-2"><em>Nomor 2</em></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nomor-5"><em>Nomor 5</em></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nomor-6"><em>Nomor 6</em></a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -383,11 +403,209 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="welcome-to-komputasi-aljabar-linear">
-<h1>Welcome to Komputasi Aljabar Linear<a class="headerlink" href="#welcome-to-komputasi-aljabar-linear" title="Link to this heading">#</a></h1>
-<p>Sistem aljabar linear adalah kumpulan dua atau lebih persamaan linear yang saling berhubungan. Solusi dari sistem persamaan linear adalah nilai-nilai variabel yang memenuhi semua persamaannya.</p>
-<div class="toctree-wrapper compound">
-</div>
+  <section class="tex2jax_ignore mathjax_ignore" id="ringkasan-materi-halaman-225238-transformasi-linear-matriks">
+<h1>Ringkasan Materi Halaman 225–238: Transformasi Linear &amp; Matriks<a class="headerlink" href="#ringkasan-materi-halaman-225238-transformasi-linear-matriks" title="Link to this heading">#</a></h1>
+<section id="transformasi-linear">
+<h2>1. Transformasi Linear<a class="headerlink" href="#transformasi-linear" title="Link to this heading">#</a></h2>
+<p>Transformasi linear adalah fungsi $<span class="math notranslate nohighlight">\(T: \mathbb{R}^n \to \mathbb{R}^m\)</span>$ yang memetakan vektor dengan dua sifat:</p>
+<ul class="simple">
+<li><p><em>Preservasi penjumlahan</em>:<br />
+$<span class="math notranslate nohighlight">\(T(\vec{u} + \vec{v}) = T(\vec{u}) + T(\vec{v})\)</span>$</p></li>
+<li><p><em>Preservasi perkalian skalar</em>:<br />
+$<span class="math notranslate nohighlight">\(T(c\vec{v}) = cT(\vec{v})\)</span>$</p></li>
+</ul>
+<p><em>Contoh transformasi linear</em>:</p>
+<ul class="simple">
+<li><p>Refleksi</p></li>
+<li><p>Rotasi</p></li>
+<li><p>Skala</p></li>
+<li><p>Proyeksi</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="representasi-matriks-dari-transformasi">
+<h2>2. Representasi Matriks dari Transformasi<a class="headerlink" href="#representasi-matriks-dari-transformasi" title="Link to this heading">#</a></h2>
+<p>Setiap transformasi linear bisa direpresentasikan dengan matriks:</p>
+<div class="math notranslate nohighlight">
+\[
+T(\vec{x}) = A\vec{x}
+\]</div>
+<p>Untuk mencari matriks <span class="math notranslate nohighlight">\(A\)</span>:</p>
+<ul>
+<li><p>Gunakan vektor basis standar:</p>
+<ul>
+<li><div class="math notranslate nohighlight">
+\[\begin{split}\vec{e}_1 = \begin{bmatrix}1 \\ 0\end{bmatrix}\end{split}\]</div>
+</li>
+<li><div class="math notranslate nohighlight">
+\[\begin{split}\vec{e}_2 = \begin{bmatrix}0 \\ 1\end{bmatrix}\end{split}\]</div>
+</li>
+</ul>
+</li>
+<li><p>Hitung:</p>
+<ul>
+<li><div class="math notranslate nohighlight">
+\[T(\vec{e}_1) \Rightarrow$$ kolom pertama
+  - $$T(\vec{e}_2) \Rightarrow$$ kolom kedua
+- Matriks:
+  \]</div>
+</li>
+</ul>
+<p>A = \begin{bmatrix} T(\vec{e}_1) &amp; T(\vec{e}_2) \end{bmatrix}
+$$</p>
+</li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="interpretasi-geometris">
+<h2>3. Interpretasi Geometris<a class="headerlink" href="#interpretasi-geometris" title="Link to this heading">#</a></h2>
+<p>Transformasi linear mengubah bentuk objek seperti unit square.</p>
+<p>Jenis transformasi:</p>
+<ul class="simple">
+<li><p><em>Rotasi</em>: memutar</p></li>
+<li><p><em>Refleksi</em>: membalik</p></li>
+<li><p><em>Shear</em>: menggeser</p></li>
+<li><p><em>Skala</em>: memperbesar / memperkecil</p></li>
+</ul>
+<p>Contoh:
+$<span class="math notranslate nohighlight">\(
+A = \begin{bmatrix}2 &amp; 0 \\ 0 &amp; 3\end{bmatrix}
+\)</span><span class="math notranslate nohighlight">\(
+Mengubah ukuran 2x pada \)</span>x<span class="math notranslate nohighlight">\( dan 3x pada \)</span>y$.</p>
+</section>
+<hr class="docutils" />
+<section id="contoh-penghitungan">
+<h2>4. Contoh Penghitungan<a class="headerlink" href="#contoh-penghitungan" title="Link to this heading">#</a></h2>
+<p>Diketahui:
+$<span class="math notranslate nohighlight">\(
+A = \begin{bmatrix} 2 &amp; -1 \\ 1 &amp; 3 \end{bmatrix}, \quad \vec{x} = \begin{bmatrix}1 \\ 1\end{bmatrix}
+\)</span>$</p>
+<p>Maka:
+$<span class="math notranslate nohighlight">\(
+A\vec{x} = \begin{bmatrix}2*1 + (-1)*1 \\ 1*1 + 3*1\end{bmatrix} = \begin{bmatrix}1 \\ 4\end{bmatrix}
+\)</span>$</p>
+</section>
+<hr class="docutils" />
+<section id="komposisi-transformasi">
+<h2>5. Komposisi Transformasi<a class="headerlink" href="#komposisi-transformasi" title="Link to this heading">#</a></h2>
+<p>Transformasi linear bisa dikomposisikan:</p>
+<div class="math notranslate nohighlight">
+\[
+T = T_2 \circ T_1 \Rightarrow T(\vec{x}) = B(A\vec{x}) = (BA)\vec{x}
+\]</div>
+<p>Komposisi = perkalian matriks.</p>
+</section>
+<hr class="docutils" />
+<section id="invers-transformasi">
+<h2>6. Invers Transformasi<a class="headerlink" href="#invers-transformasi" title="Link to this heading">#</a></h2>
+<p>Jika <span class="math notranslate nohighlight">\(T\)</span> bisa dibalik, maka ada <span class="math notranslate nohighlight">\(T^{-1}\)</span>:
+$<span class="math notranslate nohighlight">\(
+T^{-1}(T(\vec{x})) = \vec{x}
+\)</span>$</p>
+<p>Dalam bentuk matriks:
+$<span class="math notranslate nohighlight">\(
+A^{-1}A = I
+\)</span>$</p>
+<p>Syarat:</p>
+<ul class="simple">
+<li><p>Matriks persegi</p></li>
+<li><p>Determinan tidak nol</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="visualisasi-gambar-ke-matriks">
+<h2>7. Visualisasi Gambar ke Matriks<a class="headerlink" href="#visualisasi-gambar-ke-matriks" title="Link to this heading">#</a></h2>
+<p>Contoh:</p>
+<ul>
+<li><div class="math notranslate nohighlight">
+\[\begin{split}T\left(\begin{bmatrix}1 \\ 0\end{bmatrix}\right) = \begin{bmatrix}1 \\ 2\end{bmatrix}\end{split}\]</div>
+</li>
+<li><div class="math notranslate nohighlight">
+\[\begin{split}T\left(\begin{bmatrix}0 \\ 1\end{bmatrix}\right) = \begin{bmatrix}0 \\ 3\end{bmatrix}\end{split}\]</div>
+</li>
+</ul>
+<p>Maka:
+$<span class="math notranslate nohighlight">\(
+A = \begin{bmatrix}1 &amp; 0 \\ 2 &amp; 3\end{bmatrix}
+\)</span>$</p>
+<hr class="docutils" />
+<section id="nomor-1">
+<h3><em>Nomor 1</em><a class="headerlink" href="#nomor-1" title="Link to this heading">#</a></h3>
+<p>Diketahui:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A = \begin{bmatrix} 2 &amp; -1 \\ 1 &amp; 3 \end{bmatrix}, \quad 
+\vec{x} = \begin{bmatrix} 1 \\ 1 \end{bmatrix}, \quad 
+\vec{y} = \begin{bmatrix} -1 \\ 2 \end{bmatrix}
+\end{split}\]</div>
+<p>Hitung:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A\vec{x} = \begin{bmatrix} 2 &amp; -1 \\ 1 &amp; 3 \end{bmatrix} 
+\begin{bmatrix} 1 \\ 1 \end{bmatrix} 
+= \begin{bmatrix} 1 \\ 4 \end{bmatrix}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A\vec{y} = \begin{bmatrix} 2 &amp; -1 \\ 1 &amp; 3 \end{bmatrix} 
+\begin{bmatrix} -1 \\ 2 \end{bmatrix} 
+= \begin{bmatrix} -4 \\ 5 \end{bmatrix}
+\end{split}\]</div>
+</section>
+<hr class="docutils" />
+<section id="nomor-2">
+<h3><em>Nomor 2</em><a class="headerlink" href="#nomor-2" title="Link to this heading">#</a></h3>
+<p>Diketahui:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A = \begin{bmatrix} 2 &amp; 0 \\ 0 &amp; 3 \end{bmatrix}, \quad 
+\vec{x} = \begin{bmatrix} 1 \\ 1 \end{bmatrix}, \quad 
+\vec{y} = \begin{bmatrix} -1 \\ 2 \end{bmatrix}
+\end{split}\]</div>
+<p>Hitung:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A\vec{x} = \begin{bmatrix} 2 \\ 3 \end{bmatrix}, \quad 
+A\vec{y} = \begin{bmatrix} -2 \\ 6 \end{bmatrix}
+\end{split}\]</div>
+</section>
+<hr class="docutils" />
+<section id="nomor-5">
+<h3><em>Nomor 5</em><a class="headerlink" href="#nomor-5" title="Link to this heading">#</a></h3>
+<p>Dari gambar, diketahui:</p>
+<ul>
+<li><div class="math notranslate nohighlight">
+\[\begin{split}\begin{bmatrix} 1 \\ 0 \end{bmatrix} \mapsto \begin{bmatrix} 1 \\ 2 \end{bmatrix}\end{split}\]</div>
+</li>
+<li><div class="math notranslate nohighlight">
+\[\begin{split}\begin{bmatrix} 0 \\ 1 \end{bmatrix} \mapsto \begin{bmatrix} 0 \\ 3 \end{bmatrix}\end{split}\]</div>
+</li>
+</ul>
+<p>Maka matriks transformasi:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A = \begin{bmatrix} 1 &amp; 0 \\ 2 &amp; 3 \end{bmatrix}
+\end{split}\]</div>
+</section>
+<hr class="docutils" />
+<section id="nomor-6">
+<h3><em>Nomor 6</em><a class="headerlink" href="#nomor-6" title="Link to this heading">#</a></h3>
+<p>Dari gambar, diketahui:</p>
+<ul>
+<li><div class="math notranslate nohighlight">
+\[\begin{split}\begin{bmatrix} 1 \\ 0 \end{bmatrix} \mapsto \begin{bmatrix} 1 \\ 1 \end{bmatrix}\end{split}\]</div>
+</li>
+<li><div class="math notranslate nohighlight">
+\[\begin{split}\begin{bmatrix} 0 \\ 1 \end{bmatrix} \mapsto \begin{bmatrix} -1 \\ 1 \end{bmatrix}\end{split}\]</div>
+</li>
+</ul>
+<p>Maka matriks transformasi:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A = \begin{bmatrix} 1 &amp; -1 \\ 1 &amp; 1 \end{bmatrix}
+\end{split}\]</div>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -420,14 +638,14 @@ document.write(`
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="right-next"
-       href="Sistem%20Aljabar%20Linear.html"
-       title="next page">
+    <a class="left-prev"
+       href="Pengertian%20dan%20Penjelasan%20Invers%20Matriks.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Sistem Persamaan Linear</p>
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Invers Matriks: Pengertian, Rumus, dan Contoh</p>
       </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -435,6 +653,33 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transformasi-linear">1. Transformasi Linear</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#representasi-matriks-dari-transformasi">2. Representasi Matriks dari Transformasi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretasi-geometris">3. Interpretasi Geometris</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-penghitungan">4. Contoh Penghitungan</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#komposisi-transformasi">5. Komposisi Transformasi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#invers-transformasi">6. Invers Transformasi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualisasi-gambar-ke-matriks">7. Visualisasi Gambar ke Matriks</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nomor-1"><em>Nomor 1</em></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nomor-2"><em>Nomor 2</em></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nomor-5"><em>Nomor 5</em></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nomor-6"><em>Nomor 6</em></a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

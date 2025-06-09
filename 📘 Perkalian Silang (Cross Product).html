@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Welcome to Komputasi Aljabar Linear &#8212; My sample book</title>
+    <title>📘 Perkalian Silang (Cross Product) &#8212; My sample book</title>
   
   
   
@@ -57,12 +57,10 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '📘 Perkalian Silang (Cross Product)';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Sistem Persamaan Linear" href="Sistem%20Aljabar%20Linear.html" />
+    <link rel="prev" title="Ringkasan Materi: Perkalian Titik (Dot Product)" href="Ringkasan%20Materi_%20Perkalian%20Titik%20%28Dot%20Product%29.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -125,8 +123,6 @@
       
       
       
-        
-      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -145,7 +141,7 @@
     
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="intro.html">
   
   
   
@@ -176,13 +172,13 @@
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
                     Welcome to Komputasi Aljabar Linear
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Sistem%20Aljabar%20Linear.html">Sistem Persamaan Linear</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Pengertian%20dan%20Penjelasan%20Invers%20Matriks.html">Invers Matriks: Pengertian, Rumus, dan Contoh</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Ringkasan%20Materi%20dan%20jawaban%20dari%20soal.html">Ringkasan Materi Halaman 225–238: Transformasi Linear &amp; Matriks</a></li>
@@ -196,7 +192,7 @@
 
 <li class="toctree-l1"><a class="reference internal" href="Ringkasan%20Materi_%20Perkalian%20Titik%20%28Dot%20Product%29.html">Ringkasan Materi: Perkalian Titik (Dot Product)</a></li>
 
-<li class="toctree-l1"><a class="reference internal" href="%F0%9F%93%98%20Perkalian%20Silang%20%28Cross%20Product%29.html">📘 Perkalian Silang (Cross Product)</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">📘 Perkalian Silang (Cross Product)</a></li>
 </ul>
 
     </div>
@@ -268,7 +264,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2F📘 Perkalian Silang (Cross Product).html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -298,7 +294,7 @@
       
       
       
-      <li><a href="_sources/intro.md" target="_blank"
+      <li><a href="_sources/📘 Perkalian Silang (Cross Product).md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -369,7 +365,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -380,11 +378,38 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Welcome to Komputasi Aljabar Linear</h1>
+    <h1>📘 Perkalian Silang (Cross Product)</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pendahuluan">📌 Pendahuluan</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-matematis">🧮 Definisi Matematis</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#intuisi-geometris">🧠 Intuisi Geometris</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-perhitungan">📘 Contoh Perhitungan</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-1">Contoh 1:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-sifat-perkalian-silang">✅ Sifat-Sifat Perkalian Silang</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi-dalam-dunia-nyata">🛠️ Implementasi dalam Dunia Nyata</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#volume-paralelepiped">📦 Volume Paralelepiped</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh">Contoh:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latihan-soal">🎯 Latihan Soal</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-1">Soal 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-2">Soal 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-3-volume">Soal 3 (Volume)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">📓 Kesimpulan</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -394,11 +419,173 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="welcome-to-komputasi-aljabar-linear">
-<h1>Welcome to Komputasi Aljabar Linear<a class="headerlink" href="#welcome-to-komputasi-aljabar-linear" title="Link to this heading">#</a></h1>
-<p>Sistem aljabar linear adalah kumpulan dua atau lebih persamaan linear yang saling berhubungan. Solusi dari sistem persamaan linear adalah nilai-nilai variabel yang memenuhi semua persamaannya.</p>
-<div class="toctree-wrapper compound">
+  <section class="tex2jax_ignore mathjax_ignore" id="perkalian-silang-cross-product">
+<h1>📘 Perkalian Silang (Cross Product)<a class="headerlink" href="#perkalian-silang-cross-product" title="Link to this heading">#</a></h1>
+<section id="pendahuluan">
+<h2>📌 Pendahuluan<a class="headerlink" href="#pendahuluan" title="Link to this heading">#</a></h2>
+<p>Dalam ruang tiga dimensi (R³), terdapat dua jenis operasi pada vektor: <strong>perkalian titik (dot product)</strong> dan <strong>perkalian silang (cross product)</strong>. Perkalian silang menghasilkan sebuah <strong>vektor baru yang tegak lurus</strong> terhadap kedua vektor asal. Operasi ini sangat berguna dalam berbagai bidang seperti fisika, teknik, dan komputer grafis.</p>
+</section>
+<hr class="docutils" />
+<section id="definisi-matematis">
+<h2>🧮 Definisi Matematis<a class="headerlink" href="#definisi-matematis" title="Link to this heading">#</a></h2>
+<p>Diberikan dua vektor <strong>A</strong> dan <strong>B</strong> di R³:</p>
+<ul class="simple">
+<li><p><strong>A</strong> = (a₁, a₂, a₃)</p></li>
+<li><p><strong>B</strong> = (b₁, b₂, b₃)</p></li>
+</ul>
+<p>Perkalian silang A × B didefinisikan sebagai:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>A × B = |  i    j    k  |
+        | a₁  a₂  a₃ |
+        | b₁  b₂  b₃ |
+</pre></div>
 </div>
+<p>Hasil determinan matriks di atas adalah:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>A × B = (a₂b₃ - a₃b₂)i - (a₁b₃ - a₃b₁)j + (a₁b₂ - a₂b₁)k
+</pre></div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="intuisi-geometris">
+<h2>🧠 Intuisi Geometris<a class="headerlink" href="#intuisi-geometris" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Arah dari <strong>A × B</strong> ditentukan oleh <strong>aturan tangan kanan</strong>.</p></li>
+<li><p>Panjangnya setara dengan <strong>luas jajar genjang</strong> yang dibentuk oleh A dan B:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>|A × B| = |A| × |B| × sin(θ)
+</pre></div>
+</div>
+<p>dimana θ adalah sudut antara vektor A dan B.</p>
+</section>
+<hr class="docutils" />
+<section id="contoh-perhitungan">
+<h2>📘 Contoh Perhitungan<a class="headerlink" href="#contoh-perhitungan" title="Link to this heading">#</a></h2>
+<section id="contoh-1">
+<h3>Contoh 1:<a class="headerlink" href="#contoh-1" title="Link to this heading">#</a></h3>
+<p>Diberikan vektor:</p>
+<ul class="simple">
+<li><p>A = (1, 2, 3)</p></li>
+<li><p>B = (4, 5, 6)</p></li>
+</ul>
+<p>Hitung A × B:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>= |i  j  k |
+  |1  2  3|
+  |4  5  6|
+
+= i(2×6 - 3×5) - j(1×6 - 3×4) + k(1×5 - 2×4)
+= i(12 - 15) - j(6 - 12) + k(5 - 8)
+= -3i + 6j - 3k
+</pre></div>
+</div>
+<p>Hasil: <strong>A × B = (-3, 6, -3)</strong></p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="sifat-sifat-perkalian-silang">
+<h2>✅ Sifat-Sifat Perkalian Silang<a class="headerlink" href="#sifat-sifat-perkalian-silang" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>No</p></th>
+<th class="head"><p>Sifat</p></th>
+<th class="head"><p>Keterangan</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p><strong>A × B = - (B × A)</strong></p></td>
+<td><p>Anti-komutatif</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p><strong>A × A = 0</strong></p></td>
+<td><p>Karena sin(0) = 0</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p><strong>(kA) × B = k (A × B)</strong></p></td>
+<td><p>k adalah skalar</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p><strong>A × (B + C) = A × B + A × C</strong></p></td>
+<td><p>Distribusi</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p><strong>A · (A × B) = 0</strong></p></td>
+<td><p>Tegak lurus terhadap A dan B</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<hr class="docutils" />
+<section id="implementasi-dalam-dunia-nyata">
+<h2>🛠️ Implementasi dalam Dunia Nyata<a class="headerlink" href="#implementasi-dalam-dunia-nyata" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><strong>Fisika</strong>: Menghitung momen gaya (τ = r × F)</p></li>
+<li><p><strong>Grafika Komputer</strong>: Menentukan normal permukaan (digunakan dalam pencahayaan dan shading)</p></li>
+<li><p><strong>Robotika</strong>: Menentukan arah gerakan atau rotasi</p></li>
+<li><p><strong>Teknik Mesin</strong>: Perhitungan torsi</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="volume-paralelepiped">
+<h2>📦 Volume Paralelepiped<a class="headerlink" href="#volume-paralelepiped" title="Link to this heading">#</a></h2>
+<p>Sebuah <strong>paralelepiped</strong> adalah bangun tiga dimensi yang dibentuk oleh tiga vektor: A, B, dan C. Volume bangun ini dihitung dengan:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Volume = |A · (B × C)|
+</pre></div>
+</div>
+<section id="contoh">
+<h3>Contoh:<a class="headerlink" href="#contoh" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>A = (1, 0, 0)</p></li>
+<li><p>B = (0, 1, 0)</p></li>
+<li><p>C = (0, 0, 1)</p></li>
+</ul>
+<p>Langkah-langkah:</p>
+<ol class="arabic simple">
+<li><p>B × C = (1, 0, 0)</p></li>
+<li><p>A · (B × C) = 1</p></li>
+<li><p>Volume = |1| = <strong>1 satuan kubik</strong></p></li>
+</ol>
+</section>
+</section>
+<hr class="docutils" />
+<section id="latihan-soal">
+<h2>🎯 Latihan Soal<a class="headerlink" href="#latihan-soal" title="Link to this heading">#</a></h2>
+<section id="soal-1">
+<h3>Soal 1<a class="headerlink" href="#soal-1" title="Link to this heading">#</a></h3>
+<p>Hitung hasil dari A × B jika:</p>
+<ul class="simple">
+<li><p>A = (3, -3, 1)</p></li>
+<li><p>B = (4, 9, 2)</p></li>
+</ul>
+</section>
+<section id="soal-2">
+<h3>Soal 2<a class="headerlink" href="#soal-2" title="Link to this heading">#</a></h3>
+<p>Tentukan hasil perkalian silang untuk:</p>
+<ul class="simple">
+<li><p>A = (2, -1, 3)</p></li>
+<li><p>B = (1, 4, -2)</p></li>
+</ul>
+</section>
+<section id="soal-3-volume">
+<h3>Soal 3 (Volume)<a class="headerlink" href="#soal-3-volume" title="Link to this heading">#</a></h3>
+<p>Diberikan:</p>
+<ul class="simple">
+<li><p>A = (1, 2, 3)</p></li>
+<li><p>B = (4, 5, 6)</p></li>
+<li><p>C = (7, 8, 9)</p></li>
+</ul>
+<p>Hitunglah volume paralelepiped yang dibentuk oleh ketiga vektor tersebut.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="kesimpulan">
+<h2>📓 Kesimpulan<a class="headerlink" href="#kesimpulan" title="Link to this heading">#</a></h2>
+<p>Perkalian silang adalah alat penting dalam vektor tiga dimensi:</p>
+<ul class="simple">
+<li><p>Menghasilkan vektor ortogonal terhadap dua vektor asal</p></li>
+<li><p>Digunakan untuk menghitung luas jajar genjang dan volume bangun ruang</p></li>
+<li><p>Memiliki sifat anti-komutatif dan hasil selalu tegak lurus terhadap dua vektor asal</p></li>
+</ul>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -431,14 +618,14 @@ document.write(`
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="right-next"
-       href="Sistem%20Aljabar%20Linear.html"
-       title="next page">
+    <a class="left-prev"
+       href="Ringkasan%20Materi_%20Perkalian%20Titik%20%28Dot%20Product%29.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Sistem Persamaan Linear</p>
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Ringkasan Materi: Perkalian Titik (Dot Product)</p>
       </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -446,6 +633,40 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pendahuluan">📌 Pendahuluan</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-matematis">🧮 Definisi Matematis</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#intuisi-geometris">🧠 Intuisi Geometris</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-perhitungan">📘 Contoh Perhitungan</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-1">Contoh 1:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-sifat-perkalian-silang">✅ Sifat-Sifat Perkalian Silang</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi-dalam-dunia-nyata">🛠️ Implementasi dalam Dunia Nyata</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#volume-paralelepiped">📦 Volume Paralelepiped</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh">Contoh:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latihan-soal">🎯 Latihan Soal</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-1">Soal 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-2">Soal 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-3-volume">Soal 3 (Volume)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">📓 Kesimpulan</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Welcome to Komputasi Aljabar Linear &#8212; My sample book</title>
+    <title>📘 Perkalian Silang (Cross Product) &#8212; My sample book</title>
   
   
   
@@ -59,10 +59,10 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '📘 Perkalian Silang (Cross Product) (1)';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Sistem Persamaan Linear" href="Sistem%20Aljabar%20Linear.html" />
+    <link rel="prev" title="Ringkasan Materi: Perkalian Titik (Dot Product)" href="Ringkasan%20Materi_%20Perkalian%20Titik%20%28Dot%20Product%29.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -125,8 +125,6 @@
       
       
       
-        
-      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -145,7 +143,7 @@
     
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="intro.html">
   
   
   
@@ -176,13 +174,13 @@
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
                     Welcome to Komputasi Aljabar Linear
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Sistem%20Aljabar%20Linear.html">Sistem Persamaan Linear</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Pengertian%20dan%20Penjelasan%20Invers%20Matriks.html">Invers Matriks: Pengertian, Rumus, dan Contoh</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Ringkasan%20Materi%20dan%20jawaban%20dari%20soal.html">Ringkasan Materi Halaman 225–238: Transformasi Linear &amp; Matriks</a></li>
@@ -196,7 +194,7 @@
 
 <li class="toctree-l1"><a class="reference internal" href="Ringkasan%20Materi_%20Perkalian%20Titik%20%28Dot%20Product%29.html">Ringkasan Materi: Perkalian Titik (Dot Product)</a></li>
 
-<li class="toctree-l1"><a class="reference internal" href="%F0%9F%93%98%20Perkalian%20Silang%20%28Cross%20Product%29%20%281%29.html">📘 Perkalian Silang (Cross Product)</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">📘 Perkalian Silang (Cross Product)</a></li>
 </ul>
 
     </div>
@@ -268,7 +266,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2F📘 Perkalian Silang (Cross Product) (1).html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -298,7 +296,7 @@
       
       
       
-      <li><a href="_sources/intro.md" target="_blank"
+      <li><a href="_sources/📘 Perkalian Silang (Cross Product) (1).md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -369,7 +367,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -380,11 +380,33 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Welcome to Komputasi Aljabar Linear</h1>
+    <h1>📘 Perkalian Silang (Cross Product)</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pendahuluan">📌 Pendahuluan</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-dan-rumus">🧮 Definisi dan Rumus</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#luas-jajar-genjang-segitiga">📐 Luas Jajar Genjang &amp; Segitiga</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#luas-jajar-genjang">Luas Jajar Genjang</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#luas-segitiga">Luas Segitiga</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penyelesaian-soal">✅ Penyelesaian Soal</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-1">🧮 Soal 1:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-2">🧮 Soal 2:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-3">🧮 Soal 3:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-4">🧮 Soal 4:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">📓 Kesimpulan</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -394,11 +416,165 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="welcome-to-komputasi-aljabar-linear">
-<h1>Welcome to Komputasi Aljabar Linear<a class="headerlink" href="#welcome-to-komputasi-aljabar-linear" title="Link to this heading">#</a></h1>
-<p>Sistem aljabar linear adalah kumpulan dua atau lebih persamaan linear yang saling berhubungan. Solusi dari sistem persamaan linear adalah nilai-nilai variabel yang memenuhi semua persamaannya.</p>
-<div class="toctree-wrapper compound">
-</div>
+  <section class="tex2jax_ignore mathjax_ignore" id="perkalian-silang-cross-product">
+<h1>📘 Perkalian Silang (Cross Product)<a class="headerlink" href="#perkalian-silang-cross-product" title="Link to this heading">#</a></h1>
+<section id="pendahuluan">
+<h2>📌 Pendahuluan<a class="headerlink" href="#pendahuluan" title="Link to this heading">#</a></h2>
+<p>Perkalian silang adalah operasi antara dua vektor dalam ruang tiga dimensi (<span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span>) yang menghasilkan vektor baru yang tegak lurus terhadap kedua vektor asal. Operasi ini digunakan untuk menghitung <strong>luas jajar genjang</strong>, <strong>luas segitiga</strong>, serta <strong>volume bangun ruang</strong> seperti paralelepiped.</p>
+</section>
+<hr class="docutils" />
+<section id="definisi-dan-rumus">
+<h2>🧮 Definisi dan Rumus<a class="headerlink" href="#definisi-dan-rumus" title="Link to this heading">#</a></h2>
+<p>Jika terdapat dua vektor:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\vec{u} = (a_1, a_2, a_3)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\vec{v} = (b_1, b_2, b_3)\)</span></p></li>
+</ul>
+<p>Maka:
+$<span class="math notranslate nohighlight">\(
+\vec{u} \times \vec{v} =
+\begin{vmatrix}
+\hat{i} &amp; \hat{j} &amp; \hat{k} \\
+a_1 &amp; a_2 &amp; a_3 \\
+b_1 &amp; b_2 &amp; b_3
+\end{vmatrix}
+\)</span>$</p>
+<p>Hasilnya adalah:
+$<span class="math notranslate nohighlight">\(
+\vec{u} \times \vec{v} = 
+\left( a_2b_3 - a_3b_2, \ 
+a_3b_1 - a_1b_3, \ 
+a_1b_2 - a_2b_1 \right)
+\)</span>$</p>
+</section>
+<hr class="docutils" />
+<section id="luas-jajar-genjang-segitiga">
+<h2>📐 Luas Jajar Genjang &amp; Segitiga<a class="headerlink" href="#luas-jajar-genjang-segitiga" title="Link to this heading">#</a></h2>
+<section id="luas-jajar-genjang">
+<h3>Luas Jajar Genjang<a class="headerlink" href="#luas-jajar-genjang" title="Link to this heading">#</a></h3>
+<p>Dua vektor <span class="math notranslate nohighlight">\(\vec{u}\)</span> dan <span class="math notranslate nohighlight">\(\vec{v}\)</span> membentuk sebuah jajar genjang. Luasnya dihitung dari panjang vektor hasil perkalian silang:
+$<span class="math notranslate nohighlight">\(
+\text{Luas} = |\vec{u} \times \vec{v}|
+\)</span>$</p>
+</section>
+<section id="luas-segitiga">
+<h3>Luas Segitiga<a class="headerlink" href="#luas-segitiga" title="Link to this heading">#</a></h3>
+<p>Jika tiga titik A, B, dan C membentuk segitiga, maka:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\vec{AB} = \vec{B} - \vec{A}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\vec{AC} = \vec{C} - \vec{A}\)</span></p></li>
+</ul>
+<p>Luas segitiga:
+$<span class="math notranslate nohighlight">\(
+\text{Luas} = \frac{1}{2} |\vec{AB} \times \vec{AC}|
+\)</span>$</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="penyelesaian-soal">
+<h2>✅ Penyelesaian Soal<a class="headerlink" href="#penyelesaian-soal" title="Link to this heading">#</a></h2>
+<section id="soal-1">
+<h3>🧮 Soal 1:<a class="headerlink" href="#soal-1" title="Link to this heading">#</a></h3>
+<p>Diketahui:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\vec{u} = [1, 2]\)</span>, <span class="math notranslate nohighlight">\(\vec{v} = [2, 1]\)</span></p></li>
+<li><p>Diasumsikan <span class="math notranslate nohighlight">\(\vec{u} = (1, 2, 0)\)</span>, <span class="math notranslate nohighlight">\(\vec{v} = (2, 1, 0)\)</span></p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\vec{u} \times \vec{v} = 
+(2 \cdot 0 - 0 \cdot 1, \ 
+0 \cdot 2 - 1 \cdot 0, \ 
+1 \cdot 1 - 2 \cdot 2) = (0, 0, -3)
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+|\vec{u} \times \vec{v}| = \sqrt{0^2 + 0^2 + (-3)^2} = 3
+\]</div>
+<p>✅ <strong>Jawaban: 3 satuan luas</strong></p>
+</section>
+<hr class="docutils" />
+<section id="soal-2">
+<h3>🧮 Soal 2:<a class="headerlink" href="#soal-2" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(\vec{u} = (2, 0, 0)\)</span>, <span class="math notranslate nohighlight">\(\vec{v} = (0, 3, 0)\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+\vec{u} \times \vec{v} = 
+(0 \cdot 0 - 0 \cdot 3, \ 
+0 \cdot 0 - 2 \cdot 0, \ 
+2 \cdot 3 - 0 \cdot 0) = (0, 0, 6)
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+|\vec{u} \times \vec{v}| = 6
+\]</div>
+<p>✅ <strong>Jawaban: 6 satuan luas</strong></p>
+</section>
+<hr class="docutils" />
+<section id="soal-3">
+<h3>🧮 Soal 3:<a class="headerlink" href="#soal-3" title="Link to this heading">#</a></h3>
+<p>Titik-titik sudut: <span class="math notranslate nohighlight">\(A = (0,0,0)\)</span>, <span class="math notranslate nohighlight">\(B = (1,3,-1)\)</span>, <span class="math notranslate nohighlight">\(C = (2,1,1)\)</span><br />
+Vektor:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\vec{AB} = (1,3,-1)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\vec{AC} = (2,1,1)\)</span></p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\vec{AB} \times \vec{AC} = 
+\left| \begin{array}{ccc}
+i &amp; j &amp; k \\
+1 &amp; 3 &amp; -1 \\
+2 &amp; 1 &amp; 1
+\end{array} \right| = (3 \cdot 1 - (-1) \cdot 1, - (1 \cdot 1 - (-1) \cdot 2), 1 \cdot 1 - 3 \cdot 2) = (4, -3, -5)
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[
+|\vec{AB} \times \vec{AC}| = \sqrt{4^2 + (-3)^2 + (-5)^2} = \sqrt{50}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\text{Luas} = \frac{1}{2} \sqrt{50} \approx 3.54
+\]</div>
+<p>✅ <strong>Jawaban: sekitar 3.54 satuan luas</strong></p>
+</section>
+<hr class="docutils" />
+<section id="soal-4">
+<h3>🧮 Soal 4:<a class="headerlink" href="#soal-4" title="Link to this heading">#</a></h3>
+<p>Titik-titik: <span class="math notranslate nohighlight">\(A = (5,2,-1)\)</span>, <span class="math notranslate nohighlight">\(B = (3,6,2)\)</span>, <span class="math notranslate nohighlight">\(C = (1,0,4)\)</span><br />
+Vektor:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\vec{AB} = (-2, 4, 3)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\vec{AC} = (-4, -2, 5)\)</span></p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\vec{AB} \times \vec{AC} = 
+\left( 4 \cdot 5 - 3 \cdot (-2), \
+3 \cdot (-4) - (-2) \cdot 5, \
+(-2) \cdot (-2) - 4 \cdot (-4) \right) = (26, -2, 20)
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+|\vec{AB} \times \vec{AC}| = \sqrt{26^2 + (-2)^2 + 20^2} = \sqrt{1080} \approx 32.86
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\text{Luas} = \frac{1}{2} \times 32.86 \approx 16.43
+\]</div>
+<p>✅ <strong>Jawaban: sekitar 16.43 satuan luas</strong></p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="kesimpulan">
+<h2>📓 Kesimpulan<a class="headerlink" href="#kesimpulan" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Perkalian silang menghasilkan vektor tegak lurus dari dua vektor dalam <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span>.</p></li>
+<li><p>Panjang hasil cross product menunjukkan luas jajar genjang.</p></li>
+<li><p>Luas segitiga adalah setengah dari luas jajar genjang.</p></li>
+<li><p>Digunakan dalam banyak bidang sains dan teknik, termasuk fisika dan komputer grafis.</p></li>
+</ul>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -431,14 +607,14 @@ document.write(`
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="right-next"
-       href="Sistem%20Aljabar%20Linear.html"
-       title="next page">
+    <a class="left-prev"
+       href="Ringkasan%20Materi_%20Perkalian%20Titik%20%28Dot%20Product%29.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Sistem Persamaan Linear</p>
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Ringkasan Materi: Perkalian Titik (Dot Product)</p>
       </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -446,6 +622,35 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pendahuluan">📌 Pendahuluan</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-dan-rumus">🧮 Definisi dan Rumus</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#luas-jajar-genjang-segitiga">📐 Luas Jajar Genjang &amp; Segitiga</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#luas-jajar-genjang">Luas Jajar Genjang</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#luas-segitiga">Luas Segitiga</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penyelesaian-soal">✅ Penyelesaian Soal</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-1">🧮 Soal 1:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-2">🧮 Soal 2:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-3">🧮 Soal 3:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-4">🧮 Soal 4:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">📓 Kesimpulan</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
